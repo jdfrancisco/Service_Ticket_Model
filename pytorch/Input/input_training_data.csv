@@ -1,0 +1,237 @@
+Complaint #,Complaint_clean,Topic
+0,need access,Other
+1,account share username password,Account settings
+2,myspace login issue ania,Account settings
+3,,Computer issues / crashes / freezes / viruses
+4,account joinee,Account settings
+5,request system share,Account settings
+6,permission access,Other
+7,lan vm,Computer issues / crashes / freezes / viruses
+8,access need,Other
+9,space qa application,Other
+10,configure outlook system,Account settings
+11,install postgre database machine,Computer issues / crashes / freezes / viruses
+12,system screen startup,Other
+13,desktop,Other
+14,system screen middle,Other
+15,internet,Internet connectivity
+16,account attempt os password password,Account settings
+17,system hang screen startup,Other
+18,,Computer issues / crashes / freezes / viruses
+19,face issue wifi,Internet connectivity
+20,battery macbook laptop,Other
+21,computer switch,Computer issues / crashes / freezes / viruses
+22,password password,Account settings
+23,myspace password expiry,Account settings
+24,ms office,Internet connectivity
+25,password expire,Account settings
+26,account lock,Account settings
+27,space email address,Other
+28,damage computer hardware,Computer issues / crashes / freezes / viruses
+29,virus protection program,Network drive and email issues
+30,keyboard,Other
+31,file recycle bin,Computer issues / crashes / freezes / viruses
+32,computer,Computer issues / crashes / freezes / viruses
+33,internet cookie,Internet connectivity
+34,computer name,Computer issues / crashes / freezes / viruses
+35,paper jam,Internet connectivity
+36,mode,Internet connectivity
+37,network drive,Network drive and email issues
+38,email,Other
+39,network drive anymore,Network drive and email issues
+40,file window,Computer issues / crashes / freezes / viruses
+41,attachment,Other
+42,input message,Other
+43,printer installation printer,Internet connectivity
+44,drive virus,Network drive and email issues
+45,window computer shut,Computer issues / crashes / freezes / viruses
+46,computer doesnât power,Computer issues / crashes / freezes / viruses
+47,computer freeze,Computer issues / crashes / freezes / viruses
+48,computer,Computer issues / crashes / freezes / viruses
+49,printer page,Internet connectivity
+50,nothing monitor,Other
+51,wheel mouse,Internet connectivity
+52,border screen,Other
+53,display monitor,Other
+54,disk fail,Computer issues / crashes / freezes / viruses
+55,image screen distort,Other
+56,computer crash,Computer issues / crashes / freezes / viruses
+57,computer virus,Computer issues / crashes / freezes / viruses
+58,mouse act,Internet connectivity
+59,account client,Account settings
+60,space email address,Other
+61,block account,Account settings
+62,damage computer hardware,Computer issues / crashes / freezes / viruses
+63,internet,Internet connectivity
+64,verrouillã cause os mot rãinitialiser le mot passe,Account settings
+65,configure outlook system,Account settings
+66,account share username password,Account settings
+67,virus protection program,Network drive and email issues
+68,connection issue myspace ania,Account settings
+69,face network internet problem wifi,Internet connectivity
+70,forget password password,Account settings
+71,keyboard,Other
+72,name computer,Computer issues / crashes / freezes / viruses
+73,mode,Internet connectivity
+74,file recycle bin,Computer issues / crashes / freezes / viruses
+75,computer,Computer issues / crashes / freezes / viruses
+76,internet cookie,Internet connectivity
+77,paper jam,Internet connectivity
+78,network drive,Network drive and email issues
+79,network drive anymore,Network drive and email issues
+80,file window,Computer issues / crashes / freezes / viruses
+81,attachment,Other
+82,email,Other
+83,printer installation printer,Internet connectivity
+84,message input,Other
+85,drive virus,Network drive and email issues
+86,postgre database machine,Computer issues / crashes / freezes / viruses
+87,window computer,Computer issues / crashes / freezes / viruses
+88,lan machine,Computer issues / crashes / freezes / viruses
+89,login credetial,Account settings
+90,internet,Internet connectivity
+91,computer,Computer issues / crashes / freezes / viruses
+92,computer,Computer issues / crashes / freezes / viruses
+93,computer freeze,Computer issues / crashes / freezes / viruses
+94,mouse wheel,Internet connectivity
+95,printer print stain page,Internet connectivity
+96,myspace password expiry,Account settings
+97,need access,Other
+98,authorization access laptop,Other
+99,nothing monitor,Other
+100,password expire,Account settings
+101,battery macbook laptop,Other
+102,system blue screen middle,Other
+103,system configuration request share user,Account settings
+104,system screen startup,Other
+105,space qa app,Other
+106,computer,Computer issues / crashes / freezes / viruses
+107,office,Internet connectivity
+108,system hang screen startup,Other
+109,border screen,Other
+110,display monitor,Other
+111,drive,Network drive and email issues
+112,computer virus,Computer issues / crashes / freezes / viruses
+113,image screen distort tilt,Other
+114,computer crash,Computer issues / crashes / freezes / viruses
+115,mouse act,Internet connectivity
+116,access require,Other
+117,installer ms office,Internet connectivity
+118,space email address,Other
+119,block account,Account settings
+120,damage computer hardware,Computer issues / crashes / freezes / viruses
+121,internet,Internet connectivity
+122,configure outlook system,Account settings
+123,account share username password,Account settings
+124,virus protection program,Network drive and email issues
+125,myspace login problem ania,Account settings
+126,face network internet problem wifi,Internet connectivity
+127,keyboard,Other
+128,file recycle bin,Computer issues / crashes / freezes / viruses
+129,computer window,Computer issues / crashes / freezes / viruses
+130,internet cookie,Internet connectivity
+131,name computer,Computer issues / crashes / freezes / viruses
+132,paper jam,Internet connectivity
+133,mode,Internet connectivity
+134,network drive,Network drive and email issues
+135,network drive anymore,Network drive and email issues
+136,file window,Computer issues / crashes / freezes / viruses
+137,attachment,Other
+138,email,Other
+139,password password,Account settings
+140,printer installation printer,Internet connectivity
+141,input message,Other
+142,drive virus,Network drive and email issues
+143,postgre database machine,Computer issues / crashes / freezes / viruses
+144,window computer,Computer issues / crashes / freezes / viruses
+145,lan vm,Computer issues / crashes / freezes / viruses
+146,la cuenta se bloqueã³ incorrecto favor reiniciar la contraseãa,Computer issues / crashes / freezes / viruses
+147,login credential,Account settings
+148,internet,Internet connectivity
+149,computer,Computer issues / crashes / freezes / viruses
+150,computer,Computer issues / crashes / freezes / viruses
+151,computer freeze,Computer issues / crashes / freezes / viruses
+152,printer stain page,Internet connectivity
+153,myspace password expiration,Account settings
+154,account member,Account settings
+155,nothing monitor,Other
+156,battery macbook laptop,Other
+157,request system share,Account settings
+158,system blue screen beginning,Other
+159,space qa application,Other
+160,computer,Computer issues / crashes / freezes / viruses
+161,desktop,Other
+162,password expire,Account settings
+163,system blue screen middle,Other
+164,system hang screen start,Other
+165,wheel mouse,Internet connectivity
+166,border screen,Other
+167,screen monitor,Other
+168,drive,Network drive and email issues
+169,image screen distort,Other
+170,computer crash,Computer issues / crashes / freezes / viruses
+171,computer virus,Computer issues / crashes / freezes / viruses
+172,mouse act,Internet connectivity
+173,access,Other
+174,access,Other
+175,access permission laptop,Other
+176,ms office,Internet connectivity
+177,account participant,Account settings
+178,space email address,Other
+179,block account,Account settings
+180,damage computer hardware,Computer issues / crashes / freezes / viruses
+181,configure outlook system,Account settings
+182,account share username password,Account settings
+183,myspace login problem ania,Account settings
+184,forget password please password,Account settings
+185,problem network internet wifi,Internet connectivity
+186,keyboard,Other
+187,file recycle bin,Computer issues / crashes / freezes / viruses
+188,computer,Computer issues / crashes / freezes / viruses
+189,internet cookie,Internet connectivity
+190,name computer,Computer issues / crashes / freezes / viruses
+191,paper jam,Internet connectivity
+192,mode,Internet connectivity
+193,network drive,Network drive and email issues
+194,network drive anymore,Network drive and email issues
+195,file window,Computer issues / crashes / freezes / viruses
+196,email attachment,Other
+197,email,Other
+198,input message,Other
+199,printer installation printer,Internet connectivity
+200,drive virus,Network drive and email issues
+201,ms office,Internet connectivity
+202,postgre database computer,Computer issues / crashes / freezes / viruses
+203,equip antivirus program,Network drive and email issues
+204,window computer,Computer issues / crashes / freezes / viruses
+205,lan vm,Computer issues / crashes / freezes / viruses
+206,login credential,Account settings
+207,space qa application,Other
+208,computer power,Computer issues / crashes / freezes / viruses
+209,computer freeze,Computer issues / crashes / freezes / viruses
+210,computer,Computer issues / crashes / freezes / viruses
+211,internet,Internet connectivity
+212,printer print smear page,Internet connectivity
+213,myspace password expiration,Account settings
+214,need access,Other
+215,connection internet,Internet connectivity
+216,nothing monitor,Other
+217,password expire,Account settings
+218,battery macbook laptop,Other
+219,request system configure share user,Account settings
+220,require permission access laptop,Other
+221,system screen middle,Other
+222,system screen startup,Other
+223,account password attempt password,Account settings
+224,computer,Computer issues / crashes / freezes / viruses
+225,desktop,Other
+226,system hang startup blue screen,Other
+227,wheel mouse,Internet connectivity
+228,border screen,Other
+229,display monitor,Other
+230,computer crash,Computer issues / crashes / freezes / viruses
+231,drive,Network drive and email issues
+232,image screen,Other
+233,computer virus,Computer issues / crashes / freezes / viruses
+234,mouse behave,Internet connectivity
+235,access require,Other
