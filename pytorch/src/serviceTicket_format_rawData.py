@@ -28,15 +28,15 @@ import nltk
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
-# Open a csv file into a dataframe
-# df = pd.read_csv(data_path, encoding="latin-1")
-
-# Opening JSON file 
-f = open('pytorch/Input/complaints-2021-05-14_08_16_.json') 
+# # Opening JSON file 
+# f = open('../Input/complaints-2021-05-14_08_16_.json') 
   
-# returns JSON object as a dictionary 
-data = json.load(f)
-df=pd.json_normalize(data)
+# # returns JSON object as a dictionary 
+# data = json.load(f)
+# df=pd.json_normalize(data)
+
+# Open a csv file into a dataframe
+df = pd.read_csv('../Input/raw_ITtickets.csv', encoding="latin-1")
 
 # Inspect the dataframe to understand the given data.
 df.info()
@@ -48,26 +48,28 @@ df.head()
 pprint(df.columns)
 
 #Assign new column names
-df.columns = ['index', 'type', 'id', 'score', 'tags', 'zip_code','complaint_id', 'issue', 'date_received',
-       'state', 'consumer_disputed', 'product','company_response', 'company', 'submitted_via',
-       'date_sent_to_company', 'company_public_response','sub_product', 'timely',
-       'complaint_what_happened', 'sub_issue','consumer_consent_provided']
+# df.columns = ['index', 'type', 'id', 'score', 'tags', 'zip_code','complaint_id', 'issue', 'date_received',
+#        'state', 'consumer_disputed', 'product','company_response', 'company', 'submitted_via',
+#        'date_sent_to_company', 'company_public_response','sub_product', 'timely',
+#        'complaint_what_happened', 'sub_issue','consumer_consent_provided']
+
+df.columns = ['Index', 'Title', 'Resolution', 'class']
 
 #Assign nan in place of blanks in the complaints column
-df[df.loc[:, 'complaint_what_happened'] == ''] = np.nan
+df[df.loc[:, 'Title'] == ''] = np.nan
 
 # Check if blank values still exist
-df[df.loc[:, 'complaint_what_happened'] == '']
+df[df.loc[:, 'Title'] == '']
 
 pprint(df.shape)
 
 #Remove all rows where complaints column is nan
-df = df[~df['complaint_what_happened'].isnull()]
+df = df[~df['Title'].isnull()]
 
 pprint(df.shape)
 
-# Convert complaint_what_happened column to string for performing text operations
-df['complaint_what_happened'] = df['complaint_what_happened'].astype(str)
+# Convert Title column to string for performing text operations
+df['Title'] = df['Title'].astype(str)
 
 # Write your function here to clean the text and remove all the unnecessary elements.
 def clean_text(sent):
@@ -78,8 +80,8 @@ def clean_text(sent):
     sent = re.sub(pattern, '', sent) 
     return sent
 
-df_clean = pd.DataFrame(df['complaint_what_happened'].apply(clean_text))
-# df_clean.columns = ['complaint_what_happened']
+df_clean = pd.DataFrame(df['Title'].apply(clean_text))
+# df_clean.columns = ['Title']
 
 df_clean
 
@@ -92,7 +94,7 @@ def lemmmatize_text(text):
     return " ".join(sent)
 
 #Create a dataframe('df_clean') that will have only the complaints and the lemmatized complaints 
-df_clean['complaint_lemmatized'] = df_clean['complaint_what_happened'].apply(lemmmatize_text)
+df_clean['complaint_lemmatized'] = df_clean['Title'].apply(lemmmatize_text)
 
 df_clean
 
@@ -181,11 +183,11 @@ print(topic_words)
 # Observation Looking at the topics above, for each topic, we can give a label based on their products/services:
 
 # Example:
-# Topic 1 = Bank account services
-# Topic 2 = Credit card / Prepaid card
-# Topic 3 = Others
-# Topic 4 = Theft/Dispute reporting
-# Topic 5 = Mortgages/loans
+# Topic 1 = Computer issues / crashes / freezes / viruses
+# Topic 2 = Network drive and email issues
+# Topic 3 = Account settings
+# Topic 4 = Internet connectivity
+# Topic 5 = Other
 
 #Create the best topic for each complaint in terms of integer value 0,1,2,3 & 4
 topic_results = nmf_model.transform(dtm)
@@ -200,8 +202,8 @@ df_clean_5=df_clean.groupby('Topic').head(5)
 df_clean_5.sort_values('Topic')
 
 #Create the dictionary of Topic names and Topics
-Topic_names = { 0:"Bank account services", 1:"Credit card / Prepaid card", 2:"Others",
-               3:"Theft/Dispute reporting", 4:"Mortgages/loans" }
+Topic_names = { 0:"Computer issues / crashes / freezes / viruses", 1:"Network drive and email issues", 2:"Account settings",
+               3:"Internet connectivity", 4:"Other" }
 #Replace Topics with Topic Names
 df_clean['Topic'] = df_clean['Topic'].map(Topic_names)
 
@@ -224,4 +226,4 @@ training_data = df_clean[['Complaint_clean', 'Topic']]
 training_data.index.name = "Complaint #"
 print(training_data)
 
-training_data.to_csv('pytorch/Output//input_training_data.csv')
+training_data.to_csv('../Input/input_training_data.csv')
